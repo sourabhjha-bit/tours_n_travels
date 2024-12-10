@@ -1,0 +1,35 @@
+<header id="header" class="bg-white shadow-md">
+    <nav class="container mx-auto flex items-center justify-between md:px-6">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="../../assets/logo/Logo .jpg" alt="logo" class="h-20 w-auto py-2">
+      </a>
+  
+      <button 
+        class="block md:hidden px-4 py-6 text-gray-700 focus:outline-none" 
+        aria-label="Toggle Navigation" 
+        (click)="toggleMenu()"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+  
+      <div 
+      [ngClass]="{'hidden': !isMenuOpen}" 
+      class="absolute overflow-hidden top-20 left-0 w-full bg-white md:static md:block md:w-auto"
+    >
+      <ul class="flex flex-col md:flex-row md:space-x-6 text-gray-700">
+        <li class="py-2 md:py-0">
+          <a routerLink="/" fragment="about" class="block px-4 py-2 hover:text-blue-600">About</a>
+        </li>
+        <li class="py-2 md:py-0">
+          <a routerLink="/" fragment="gallery" class="block px-4 py-2 hover:text-blue-600">Gallery & Photos</a>
+        </li>
+        <li class="py-2 md:py-0">
+          <a routerLink="/" fragment="contact" class="block px-4 py-2 hover:text-blue-600">Contact Us</a>
+        </li>
+      </ul>
+    </div>    
+    </nav>
+  </header>
+  
