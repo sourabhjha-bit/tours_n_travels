@@ -11,7 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  whatsappNumber: string = '9650387642'
+  whatsappNumber: string = '9315478178'
   message: string = 'Hello! I would like to get in touch.'
 
   getWhatsAppLink(): string {

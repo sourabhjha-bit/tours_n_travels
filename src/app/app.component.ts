@@ -5,11 +5,12 @@ import { AboutUsComponent } from "./about-us/about-us.component";
 import { AutoSliderComponent } from "./auto-slider/auto-slider.component";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { FooterComponent } from "./footer/footer.component";
+import { FloatingWhatsappComponent } from "./floating-whatsapp/floating-whatsapp.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, AboutUsComponent, AutoSliderComponent, ContactUsComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, AboutUsComponent, AutoSliderComponent, ContactUsComponent, FooterComponent, FloatingWhatsappComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
