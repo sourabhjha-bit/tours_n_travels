@@ -1,4 +1,4 @@
-<div *ngIf="images && images.length > 0" class="carousel-container lg:w-80px w-full ">
+<div *ngIf="images && images.length > 0" class="carousel-container w-full ">
     <img *ngFor="let image of images; let i=index" [src]="image" [alt]="" [ngClass]="{'image-active': selectedIndex === i}"
     class="fade"
     >
